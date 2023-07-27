@@ -3,7 +3,7 @@ export const main = [{
    profilepicture: "https://avatars.githubusercontent.com/u/99320495",
    name: "Ringga Revanka",
    username: "@ringgarevanka",
-   hashtag: "#",
+   hashtag: "v1.0",
 }, ];
 
 //socialmedialinks
@@ -21,11 +21,6 @@ export const links = [{
       socialmedianame: "Facebook",
       socialmedialink: "https://www.facebook.com/ringgarevanka",
       socialmediaicon: "fab fa-facebook",
-   },
-   {
-      socialmedianame: "Twitter",
-      socialmedialink: "https://twitter.com/ringgarevanka/",
-      socialmediaicon: "fab fa-twitter",
    },
    {
       socialmedianame: "Discord",
