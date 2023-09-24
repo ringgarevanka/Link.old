@@ -34,17 +34,17 @@ import {
 } from "./index.js";
 const linkContainer = document.getElementById("links");
 
-function addLink(socialmedianame, socialmedialink, socialmediaicon) {
+function addLink(inputname, inputlink, inputicon) {
 	return `
-<a class="link" href="${socialmedialink}" target="_blank">
-<i class="${socialmediaicon}"></i> ${socialmedianame}
+<a class="link" href="${inputlink}" target="_blank">
+<i class="${inputicon}"></i> ${inputname}
 </a>
 `
 }
 let allLinks = "";
 links.forEach((ele => {
-	let socialmedialink = ele.socialmedialink,
-		socialmedianame = ele.socialmedianame,
-		socialmediaicon = ele.socialmediaicon;
-	allLinks += addLink(socialmedianame, socialmedialink, socialmediaicon)
+	let inputlink = ele.inputlink,
+		inputname = ele.inputname,
+		inputicon = ele.inputicon;
+	allLinks += addLink(inputname, inputlink, inputicon)
 })), linkContainer.innerHTML = allLinks;

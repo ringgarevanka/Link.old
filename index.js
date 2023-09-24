@@ -3,43 +3,48 @@ export const main = [{
    profilepicture: "https://avatars.githubusercontent.com/u/99320495",
    name: "Ringga Revanka",
    username: "@ringgarevanka",
-   hashtag: "v1.0",
+   hashtag: " ",
 }, ];
 
-//socialmedialinks
+//links
 export const links = [{
-      socialmedianame: "Instagram",
-      socialmedialink: "https://www.instagram.com/ringgarevanka/",
-      socialmediaicon: "fab fa-instagram",
+      inputname: "Instagram",
+      inputlink: "https://www.instagram.com/ringgarevanka/",
+      inputicon: "fab fa-instagram",
    },
    {
-      socialmedianame: "TikTok",
-      socialmedialink: "https://www.tiktok.com/@ringgarevanka/",
-      socialmediaicon: "fab fa-tiktok",
+      inputname: "TikTok",
+      inputlink: "https://www.tiktok.com/@ringgarevanka/",
+      inputicon: "fab fa-tiktok",
    },
    {
-      socialmedianame: "Facebook",
-      socialmedialink: "https://www.facebook.com/ringgarevanka",
-      socialmediaicon: "fab fa-facebook",
+      inputname: "Facebook",
+      inputlink: "https://www.facebook.com/ringgarevanka",
+      inputicon: "fab fa-facebook",
    },
    {
-      socialmedianame: "Discord",
-      socialmedialink: "https://discordapp.com/users/1007123238985412608",
-      socialmediaicon: "fab fa-discord",
+      inputname: "Discord",
+      inputlink: "https://discordapp.com/users/1007123238985412608",
+      inputicon: "fab fa-discord",
    },
    {
-      socialmedianame: "Github",
-      socialmedialink: "https://github.com/ringgarevanka",
-      socialmediaicon: "fab fa-github",
+      inputname: "Github",
+      inputlink: "https://github.com/ringgarevanka",
+      inputicon: "fab fa-github",
    },
    {
-      socialmedianame: "Telegram",
-      socialmedialink: "https://t.me/ringgarevanka",
-      socialmediaicon: "fab fa-telegram",
+      inputname: "Telegram",
+      inputlink: "https://t.me/ringgarevanka",
+      inputicon: "fab fa-telegram",
    },
    {
-      socialmedianame: "E-Mail",
-      socialmedialink: "mailto:ringgarevanka+public@gmail.com",
-      socialmediaicon: "fa fa-envelope",
+      inputname: "E-Mail",
+      inputlink: "mailto:ringgarevanka+public@gmail.com",
+      inputicon: "fa fa-envelope",
+   },
+   {
+      inputname: "(LMP) Local Media Player",
+      inputlink: "https://ringgarevanka.github.io/LMP",
+      inputicon: "fas fa-project-diagram",
    },
 ];

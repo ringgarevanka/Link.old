@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:400,700&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 :root {
     --bgColor: #223344;
     --bgColor2: #090a0f;
@@ -8,7 +8,7 @@
     --font1: 'Ubuntu', sans-serif;
     --font2: 'Quicksand', sans-serif;
     --delay: .3s;
-    --bgimg: url('https://r4.wallpaperflare.com/wallpaper/817/896/30/1920x1080-px-city-lights-night-video-games-sonic-hd-art-wallpaper-b9f0680db11a9d2bc687880f0031166d.jpg')
+    --bgimg: url('https://w.forfun.com/fetch/04/0449ba5848c1b3efb558695322c67b7b.jpeg')
 }
 
 body {
