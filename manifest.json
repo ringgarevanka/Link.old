@@ -1,0 +1,23 @@
+{ 
+   "name": "Ringga Revanka Link", 
+   "short_name": "Ringga Link", 
+   "description": "Web App (https://ringgarevanka.github.io/Link)", 
+ "icons": [{ 
+     "src": "https://avatars.githubusercontent.com/u/99320495", 
+       "sizes": "1080x1080", 
+       "type": "image/png" 
+     }], 
+   "lang": "en",
+   "orientation": "natural",
+   "start_url": "/Link", 
+   "scope": "https://ringgarevanka.github.io/", 
+   "display": "standalone", 
+   "display_override": [
+       "standalone",
+       "fullscreen",
+       "minimal-ui",
+       "window-controls-overlay"
+     ],
+   "theme_color": "#131931", 
+   "background_color": "#0F2034"
+ }
