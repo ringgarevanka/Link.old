@@ -20,8 +20,8 @@ function addMain(profilepicture, name, username, hashtag) {
   `;
 }
 
-
 mainContainer.innerHTML = main.map(ele => addMain(ele.profilepicture, ele.name, ele.username, ele.hashtag)).join('');
+
 
 const linkContainer = document.getElementById("links");
 
