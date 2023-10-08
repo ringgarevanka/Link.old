@@ -1,7 +1,7 @@
 //TEMPORARY CODE
 import { 
          main 
- } from "./index.js"; 
+ } from "./data.js"; 
  const mainContainer = document.getElementById("main"); 
   
  function addmain(profilepicture, name, username, hashtag) { 
@@ -32,7 +32,7 @@ import {
   
  import { 
          links 
- } from "./index.js"; 
+ } from "./data.js"; 
  const linkContainer = document.getElementById("links"); 
   
  function addLink(inputname, inputlink, inputicon) { 
