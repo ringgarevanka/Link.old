@@ -42,9 +42,11 @@ export const links = [{
       inputlink: "mailto:ringgarevanka+public@gmail.com",
       inputicon: "fa fa-envelope",
    },
+/*
    {
       inputname: "(LMP) Local Media Player",
       inputlink: "https://ringgarevanka.github.io/LMP",
       inputicon: "fas fa-project-diagram",
    },
+*/
 ];
