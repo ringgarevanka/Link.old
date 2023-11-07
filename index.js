@@ -24,9 +24,9 @@ import {
  let allmain = ""; 
  main.forEach((ele => { 
          let profilepicture = ele.profilepicture, 
-                 name = ele.name, 
-                 username = ele.username, 
-                 hashtag = ele.hashtag; 
+             name = ele.name, 
+             username = ele.username, 
+             hashtag = ele.hashtag; 
          allmain += addmain(profilepicture, name, username, hashtag) 
  })), mainContainer.innerHTML = allmain; 
   
@@ -45,7 +45,7 @@ import {
  let allLinks = ""; 
  links.forEach((ele => { 
          let inputlink = ele.inputlink, 
-                 inputname = ele.inputname, 
-                 inputicon = ele.inputicon; 
+             inputname = ele.inputname, 
+             inputicon = ele.inputicon; 
          allLinks += addLink(inputname, inputlink, inputicon) 
  })), linkContainer.innerHTML = allLinks;
