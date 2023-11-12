@@ -8,6 +8,7 @@
     --font1: 'Ubuntu', sans-serif;
     --font2: 'Quicksand', sans-serif;
     --delay: .3s;
+    --bgimg: url('https://w.forfun.com/fetch/04/0449ba5848c1b3efb558695322c67b7b.jpeg')
       }
 
 body {
@@ -25,24 +26,23 @@ body {
     background-position: center;
     background-size: cover;
     position: relative;
-
+    -webkit-tap-highlight-color: transparent;
 }
 
 #profilePicture, #profilePicture img {
     position: relative;
-    width: 96px;
-    height: 96px;
+    width: 120px;
+    height: 120px;
+    margin: 20px auto 10px;
+    border-radius: 8px;
     display: block;
-    margin: 40px auto 20px;
-    border-radius: 50%;
-    -webkit-tap-highlight-color: transparent;
 }
 
 #name {
     color: var(--accentColor);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    line-height: 1.25;
+    line-height: 1.5;
     display: block;
     font-family: var(--font1);
     width: 100%;
@@ -52,9 +52,8 @@ body {
 
 #username {
     color: var(--accentColor);
-    font-size: 11px;
-    font-weight: bold;
-    line-height: 0.80;
+    font-size: 14px;
+    line-height: 1.2;
     display: block;
     font-family: var(--font1);
     width: 100%;
@@ -74,18 +73,15 @@ body {
     background-color: transparent;
     color: var(--accentColor);
     border: solid var(--accentColor) 2px;
-    border-radius: 10px;
+    border-radius: 8px;
     font-family: var(--font2);
-    font-size: 11px;
+    font-size: 14px;
     text-align: center;
     display: block;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    padding: 10px; /* 17px */
+    margin: 10px;
+    padding: 12px;
     text-decoration: none;
-    /* transition: all .25s cubic-bezier(.08, .59, .29, .99); */
-    -webkit-tap-highlight-color: transparent;
+    transition: all .25s cubic-bezier(.08, .59, .29, .99);
 }
 
 @media (hover: hover) {
