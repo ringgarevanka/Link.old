@@ -20,12 +20,7 @@ export const links = [{
    {
       inputname: "Facebook",
       inputlink: "https://www.facebook.com/ringgarevanka",
-      inputicon: "fab fa-facebook-f",
-   },
-   {
-      inputname: "Facebook Page",
-      inputlink: "https://www.facebook.com/profile.php?id=61552955142216",
-      inputicon: "fab fa-facebook,
+      inputicon: "fab fa-facebook",
    },
    {
       inputname: "Discord",
@@ -44,7 +39,7 @@ export const links = [{
    },
    {
       inputname: "E-Mail",
-      inputlink: "mailto:ringgarevanka@proton.me",
+      inputlink: "mailto:ringgarevanka+public@gmail.com",
       inputicon: "fa fa-envelope",
    },
 /*
