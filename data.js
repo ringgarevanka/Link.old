@@ -3,7 +3,7 @@ export const main = [{
    profilepicture: "https://avatars.githubusercontent.com/u/99320495",
    name: "Ringga Revanka",
    username: "@ringgarevanka",
-   hashtag: "",
+   hashtag: " ",
 }, ];
 
 //links
