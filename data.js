@@ -1,4 +1,3 @@
-//main
 export const main = [{
    profilepicture: "https://avatars.githubusercontent.com/u/99320495",
    name: "Ringga Revanka",
@@ -6,7 +5,6 @@ export const main = [{
    hashtag: " ",
 }, ];
 
-//links
 export const links = [{
       inputname: "Instagram",
       inputlink: "https://www.instagram.com/ringgarevanka/",
