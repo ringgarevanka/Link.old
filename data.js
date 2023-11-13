@@ -18,6 +18,11 @@ export const links = [{
    {
       inputname: "Facebook",
       inputlink: "https://www.facebook.com/ringgarevanka",
+      inputicon: "fab fa-facebook-f",
+   },
+   {
+      inputname: "Facebook Page",
+      inputlink: "https://www.facebook.com/profile.php?id=61552955142216",
       inputicon: "fab fa-facebook",
    },
    {
