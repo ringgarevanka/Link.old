@@ -2,7 +2,7 @@ export const main = [{
    profilepicture: "https://avatars.githubusercontent.com/u/99320495",
    name: "Ringga Revanka",
    username: "@ringgarevanka",
-   hashtag: " ",
+   hashtag: "don't give up.",
 }, ];
 
 export const links = [{
