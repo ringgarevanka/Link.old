@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
 :root {
     --bgColor: #223344;
     --bgColor2: #090a0f;
@@ -27,6 +28,11 @@ body {
     background-size: cover;
     position: relative;
     -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #profilePicture, #profilePicture img {
@@ -38,29 +44,31 @@ body {
     display: block;
 }
 
-#name {
+#name, #username, #description {
     color: var(--accentColor);
+    display: block;
+    font-family: var(--font1);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#name {
     font-size: 18px;
     font-weight: bold;
     line-height: 1.5;
-    display: block;
-    font-family: var(--font1);
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
 }
 
 #username {
-    color: var(--accentColor);
     font-size: 14px;
-    line-height: 1.2;
-    display: block;
-    font-family: var(--font1);
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
+    line-height: 1.0;
 }
 
+#description {
+    font-size: 12px;
+    font-weight: light;
+    line-height: 2.0;
+}
 #links {
     max-width: 675px;
     width: auto;
@@ -100,21 +108,11 @@ body {
     position: relative;
     padding-bottom: 20px;
     color: var(--accentColor);
-    font-size: 1rem;
+    font-size: 10px;
     display: block;
     font-family: var(--font1);
     width: 100%;
     text-align: center;
-    /*
-    overflow: hidden;
-    background: linear-gradient(90deg, var(--bgColor), var(--accentColor), var(--bgColor));
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: animate 3s linear var(--delay) infinite;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
-    */
 }
 
 

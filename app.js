@@ -3,7 +3,7 @@ import {
  } from "./data.js"; 
  const mainContainer = document.getElementById("main"); 
   
- function addmain(profilepicture, name, username, hashtag) { 
+ function addmain(profilepicture, name, username, description, hashtag) { 
          return ` 
  <a id="profilePicture"> 
  <img src="${profilepicture}"> 
@@ -14,6 +14,9 @@ import {
  <div id="username"> 
  ${username} 
  </div> 
+ <div id="description">
+ ${description}
+ </div>
  <div class="links" id="links"></div> 
  <div id="hashtag"> 
  ${hashtag} 
@@ -25,8 +28,9 @@ import {
          let profilepicture = ele.profilepicture, 
              name = ele.name, 
              username = ele.username, 
+             description = ele.description,
              hashtag = ele.hashtag; 
-         allmain += addmain(profilepicture, name, username, hashtag) 
+         allmain += addmain(profilepicture, name, username, description, hashtag) 
  })), mainContainer.innerHTML = allmain; 
   
  import { 

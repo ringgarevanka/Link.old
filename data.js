@@ -2,6 +2,7 @@ export const main = [{
    profilepicture: "https://avatars.githubusercontent.com/u/99320495",
    name: "Ringga Revanka",
    username: "@ringgarevanka",
+   description: "hello im Programer,Gamers,and Editor",
    hashtag: "don't give up.",
 }, ];
 
@@ -42,14 +43,7 @@ export const links = [{
    },
    {
       inputname: "E-Mail",
-      inputlink: "mailto:ringgarevanka+public@gmail.com",
+      inputlink: "mailto: ringgarevanka@proton.me",
       inputicon: "fa fa-envelope",
    },
-/*
-   {
-      inputname: "(LMP) Local Media Player",
-      inputlink: "https://ringgarevanka.github.io/LMP",
-      inputicon: "fas fa-project-diagram",
-   },
-*/
 ];
