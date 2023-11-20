@@ -2,7 +2,7 @@ export const main = [{
    profilepicture: "https://avatars.githubusercontent.com/u/99320495",
    name: "Ringga Revanka",
    username: "@ringgarevanka",
-   description: "hello im Programer,Gamers,and Editor",
+   description: "Code • Game • Edit",
    hashtag: "don't give up.",
 }, ];
 
@@ -14,6 +14,11 @@ export const links = [{
    {
       inputname: "TikTok",
       inputlink: "https://www.tiktok.com/@ringgarevanka/",
+      inputicon: "fab fa-tiktok",
+   },
+   {
+      inputname: "TikTok",
+      inputlink: "https://www.tiktok.com/@ringga_revanka/",
       inputicon: "fab fa-tiktok",
    },
    {
