@@ -20,23 +20,19 @@ body {
     animation: 1s ease-out var(--delay) 1 transitionAnimation;
     animation-fill-mode: forwards;
     position: relative;
+    background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);
+    background-image: var(--bgimg);
     opacity: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
     -webkit-tap-highlight-color: transparent;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
-body::before {
-    position: absolute;
-    background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);
-    background-image: var(--bgimg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    filter: brightness(50%) blur(5px)
 }
 
 #profilePicture, #profilePicture img {
