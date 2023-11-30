@@ -100,8 +100,9 @@ body {
 }
 
 .link:active {
-    background-color: var(--accentColor);
-    color: var(--bgColor);
+    background-color: rgba( var(--accentColor), 0.8);
+    color: rgba(var(--bgColor), 0.8);
+    filter: brightness(80%) blur(2px);
 }
 
 #hashtag {
