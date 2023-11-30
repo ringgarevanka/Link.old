@@ -21,7 +21,7 @@ body {
     animation-fill-mode: forwards;
     position: relative;
     background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);
-    background-image: var(--bgimg) brightness(50%) blur(5px);
+    background-image: var(--bgimg), filter: brightness(50%) blur(5px);
     opacity: 0;
     background-repeat: no-repeat;
     background-position: center;
