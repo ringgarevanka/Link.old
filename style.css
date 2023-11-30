@@ -9,7 +9,7 @@
     --font1: 'Ubuntu', sans-serif;
     --font2: 'Quicksand', sans-serif;
     --delay: .3s;
-    --bgimg: url('https://images.pexels.com/photos/1642770/pexels-photo-1642770.jpeg')
+    --bgimg: url('https://r4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-88167d78e010ec7860fce1aef882643a.jpg')
 }
 
 body {
@@ -100,10 +100,9 @@ body {
 }
 
 .link:active {
-    background-color: rgba(var(--accentColor), 0.8);
-    color: rgba(var(--bgColor), 0.8);
-    backdrop-filter: blur(2px);
-    filter: brightness(80%);
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    filter: brightness(150%);
 }
 
 #hashtag {
