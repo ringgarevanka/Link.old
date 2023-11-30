@@ -30,12 +30,7 @@ body {
 }
 
 body::before {
-    content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);
     background-image: var(--bgimg);
     background-repeat: no-repeat;
