@@ -38,17 +38,18 @@ import {
  } from "./data.js"; 
  const linkContainer = document.getElementById("links"); 
   
- function addLink(inputname, inputlink, inputicon) { 
+ function addLink(name, link, icon, target) { 
          return ` 
- <a class="link" href="${inputlink}" target="_blank"> 
- <i class="${inputicon}"></i> ${inputname} 
+ <a class="link" href="${link}" target="${target}"> 
+ <i class="${icon}"></i> ${name} 
  </a> 
  ` 
  } 
  let allLinks = ""; 
  links.forEach((ele => { 
-         let inputlink = ele.inputlink, 
-             inputname = ele.inputname, 
-             inputicon = ele.inputicon; 
-         allLinks += addLink(inputname, inputlink, inputicon) 
+         let name = ele.name, 
+             link = ele.link, 
+             icon = ele.icon,
+             target = ele.target; 
+         allLinks += addLink(name, link, icon, target) 
  })), linkContainer.innerHTML = allLinks;
