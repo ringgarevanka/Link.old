@@ -32,12 +32,6 @@ export const links = [
       target: "_blank",
    },
    {
-      name: "Facebook Page",
-      link: "https://www.facebook.com/profile.php?id=61552955142216",
-      icon: "fab fa-facebook",
-      target: "_blank",
-   },
-   {
       name: "Discord",
       link: "https://discordapp.com/users/1007123238985412608",
       icon: "fab fa-discord",
@@ -59,6 +53,12 @@ export const links = [
       name: "E-Mail",
       link: "mailto: ringgarevanka@proton.me",
       icon: "fa fa-envelope",
+      target: "_blank",
+   },
+   {
+      name: "Test",
+      link: "#",
+      icon: "fab",
       target: "_blank",
    },
 ];
