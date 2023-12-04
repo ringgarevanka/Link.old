@@ -1,55 +1,45 @@
-import { 
-         main 
- } from "./data.js"; 
- const mainContainer = document.getElementById("main"); 
-  
- function addmain(profilepicture, name, username, description, hashtag) { 
-         return ` 
- <a id="profilePicture"> 
- <img src="${profilepicture}"> 
- </a> 
- <div id="name"> 
- ${name} 
- </div> 
- <div id="username"> 
- ${username} 
- </div> 
- <div id="description">
- ${description}
- </div>
- <div class="links" id="links"></div> 
- <div id="hashtag"> 
- ${hashtag} 
- </div> 
- ` 
- } 
- let allmain = ""; 
- main.forEach((ele => { 
-         let profilepicture = ele.profilepicture, 
-             name = ele.name, 
-             username = ele.username, 
-             description = ele.description,
-             hashtag = ele.hashtag; 
-         allmain += addmain(profilepicture, name, username, description, hashtag) 
- })), mainContainer.innerHTML = allmain; 
-  
- import { 
-         links 
- } from "./data.js"; 
- const linkContainer = document.getElementById("links"); 
-  
- function addLink(name, link, icon, target) { 
-         return ` 
- <a class="link" href="${link}" target="${target}"> 
- <i class="${icon}"></i> ${name} 
- </a> 
- ` 
- } 
- let allLinks = ""; 
- links.forEach((ele => { 
-         let name = ele.name, 
-             link = ele.link, 
-             icon = ele.icon,
-             target = ele.target; 
-         allLinks += addLink(name, link, icon, target) 
- })), linkContainer.innerHTML = allLinks;
+import { main, links } from "./data.js";
+
+const mainContainer = document.getElementById("main");
+const linkContainer = document.getElementById("links");
+
+function addMain(profilepicture, name, username, description, hashtag) {
+    return `
+        <a id="profilePicture">
+            <img src="${profilepicture}">
+        </a>
+        <div id="name">
+            ${name}
+        </div>
+        <div id="username">
+            ${username}
+        </div>
+        <div id="description">
+            ${description}
+        </div>
+        <div class="links" id="links"></div>
+        <div id="hashtag">
+            ${hashtag}
+        </div>
+    `;
+}
+
+function addLink(name, link, icon, target) {
+    return `
+        <a class="link" href="${link}" target="${target}">
+            <i class="${icon}"></i> ${name}
+        </a>
+    `;
+}
+
+let allMain = main.reduce((accumulator, ele) => {
+    const { profilepicture, name, username, description, hashtag } = ele;
+    return accumulator + addMain(profilepicture, name, username, description, hashtag);
+}, "");
+mainContainer.innerHTML = allMain;
+
+let allLinks = links.reduce((accumulator, ele) => {
+    const { name, link, icon, target } = ele;
+    return accumulator + addLink(name, link, icon, target);
+}, "");
+linkContainer.innerHTML = allLinks;
