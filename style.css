@@ -27,6 +27,7 @@ body {
     background-position: center;
     background-size: cover;
     position: relative;
+    overflow: hidden;
     -webkit-tap-highlight-color: transparent;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
