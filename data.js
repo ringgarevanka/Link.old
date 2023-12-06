@@ -10,43 +10,43 @@ export const links = [
    {
       name: "Instagram",
       link: "https://www.instagram.com/ringgarevanka/",
-      icon: "fab fa-instagram",
+      icon: "fa fa-instagram",
       target: "_blank",
    },
    {
       name: "TikTok",
       link: "https://www.tiktok.com/@ringgarevanka/",
-      icon: "fab fa-tiktok",
+      icon: "fa fa-tiktok",
       target: "_blank",
    },
    {
-      name: "TikTok",
+      name: "TikTok (2)",
       link: "https://www.tiktok.com/@ringga_revanka/",
-      icon: "fab fa-tiktok",
+      icon: "fa fa-tiktok",
       target: "_blank",
    },
    {
       name: "Facebook",
       link: "https://www.facebook.com/ringgarevanka",
-      icon: "fab fa-facebook-f",
+      icon: "fa fa-facebook",
       target: "_blank",
    },
    {
       name: "Discord",
       link: "https://discordapp.com/users/1007123238985412608",
-      icon: "fab fa-discord",
+      icon: "fa fa-discord",
       target: "_blank",
    },
    {
       name: "Github",
       link: "https://github.com/ringgarevanka",
-      icon: "fab fa-github",
+      icon: "fa fa-github",
       target: "_blank",
    },
    {
       name: "Telegram",
       link: "https://t.me/ringgarevanka",
-      icon: "fab fa-telegram",
+      icon: "fa fa-telegram",
       target: "_blank",
    },
    {
@@ -58,7 +58,7 @@ export const links = [
    {
       name: "[Projects] Local Media Player",
       link: "https://ringgarevanka.github.io/LMP",
-      icon: "fab fa-project-diagram",
+      icon: "fa fa-project-diagram",
       target: "_self",
    },
 ];
