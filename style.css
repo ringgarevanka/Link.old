@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
 :root {
     --bgColor: #223344;
     --bgColor2: #090a0f;
     --accentColor: #FFF;
-    --font1: 'Ubuntu', sans-serif;
-    --font2: 'Quicksand', sans-serif;
+    --font1: 'Montserrat', sans-serif;
+    --font2: 'Poppins', sans-serif;
     --delay: .3s;
     --bg: url('https://r4.wallpaperflare.com/wallpaper/665/68/940/anime-room-interior-dark-wallpaper-88167d78e010ec7860fce1aef882643a.jpg')
 }
