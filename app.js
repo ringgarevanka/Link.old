@@ -4,7 +4,7 @@ import {
 from "./data.js";
 const mainContainer = document.getElementById("main");
 
-function addmain(profilepicture, name, username, description, text001) {
+function addmain(profilepicture, name, username, description, bottom_text) {
    return ` 
  <a id="profilePicture"> 
  <img src="${profilepicture}"> 
@@ -19,8 +19,8 @@ function addmain(profilepicture, name, username, description, text001) {
  ${description}
  </div>
  <div class="links" id="links"></div> 
- <div id="text001"> 
- ${text001} 
+ <div id="bottom_text"> 
+ ${bottom_text} 
  </div> 
  `
 }
@@ -30,8 +30,8 @@ main.forEach((ele => {
       name = ele.name,
       username = ele.username,
       description = ele.description,
-      text001 = ele.text001;
-   allmain += addmain(profilepicture, name, username, description, text001)
+      bottom_text = ele.bottom_text;
+   allmain += addmain(profilepicture, name, username, description, bottom_text)
 })), mainContainer.innerHTML = allmain;
 
 import {

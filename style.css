@@ -109,7 +109,7 @@ body {
 	filter: brightness(150%);
 }
 
-#hashtag {
+#bottom_text {
 	position: relative;
 	padding-bottom: 20px;
 	color: var(--accentColor);
