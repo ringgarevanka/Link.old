@@ -3,7 +3,7 @@ export const main = [{
    name: "Ringga Revanka",
    username: "@ringgarevanka",
    description: "Code • Game • Edit",
-   hashtag: "! This page is under development !",
+   text001: "! This page is under development !",
 }, ];
 
 export const links = [

@@ -1,10 +1,11 @@
-import { 
-         main 
- } from "./data.js"; 
- const mainContainer = document.getElementById("main"); 
+import {
+   main
+}
+from "./data.js";
+const mainContainer = document.getElementById("main");
 
- function addmain(profilepicture, name, username, description, hashtag) { 
-         return ` 
+function addmain(profilepicture, name, username, description, text001) {
+   return ` 
  <a id="profilePicture"> 
  <img src="${profilepicture}"> 
  </a> 
@@ -18,38 +19,39 @@ import {
  ${description}
  </div>
  <div class="links" id="links"></div> 
- <div id="hashtag"> 
- ${hashtag} 
+ <div id="text001"> 
+ ${text001} 
  </div> 
- ` 
- } 
- let allmain = ""; 
- main.forEach((ele => { 
-         let profilepicture = ele.profilepicture, 
-             name = ele.name, 
-             username = ele.username, 
-             description = ele.description,
-             hashtag = ele.hashtag; 
-         allmain += addmain(profilepicture, name, username, description, hashtag) 
- })), mainContainer.innerHTML = allmain; 
+ `
+}
+let allmain = "";
+main.forEach((ele => {
+   let profilepicture = ele.profilepicture,
+      name = ele.name,
+      username = ele.username,
+      description = ele.description,
+      text001 = ele.text001;
+   allmain += addmain(profilepicture, name, username, description, text001)
+})), mainContainer.innerHTML = allmain;
 
- import { 
-         links 
- } from "./data.js"; 
- const linkContainer = document.getElementById("links"); 
+import {
+   links
+}
+from "./data.js";
+const linkContainer = document.getElementById("links");
 
- function addLink(name, link, icon, target) { 
-         return ` 
+function addLink(name, link, icon, target) {
+   return ` 
  <a class="link" href="${link}" target="${target}"> 
  <i class="${icon}"></i> ${name} 
  </a> 
- ` 
- } 
- let allLinks = ""; 
- links.forEach((ele => { 
-         let name = ele.name, 
-             link = ele.link, 
-             icon = ele.icon,
-             target = ele.target; 
-         allLinks += addLink(name, link, icon, target) 
- })), linkContainer.innerHTML = allLinks;
+ `
+}
+let allLinks = "";
+links.forEach((ele => {
+   let name = ele.name,
+      link = ele.link,
+      icon = ele.icon,
+      target = ele.target;
+   allLinks += addLink(name, link, icon, target)
+})), linkContainer.innerHTML = allLinks;
