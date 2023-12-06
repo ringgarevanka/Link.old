@@ -56,9 +56,9 @@ export const links = [
       target: "_blank",
    },
    {
-      name: "[Projects{discontinue} Local Media Player (LMP)]",
+      name: "[Projects] Local Media Player",
       link: "https://ringgarevanka.github.io/LMP",
-      icon: "",
+      icon: "fab fa-project-diagram",
       target: "_self",
    },
 ];
