@@ -51,7 +51,7 @@ export const links = [
    },
    {
       name: "E-Mail",
-      link: "mailto: ringgarevanka@proton.me",
+      link: "mailto:ringgarevanka@proton.me",
       icon: "fa fa-envelope",
       target: "_blank",
    },
