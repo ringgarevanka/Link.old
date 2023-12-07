@@ -1,8 +1,4 @@
 /* Preload Files */
-document.addEventListener("DOMContentLoaded", function () {
-  console.log("All files loaded. Displaying the page!");
-});
-
 function preloadFiles() {
   var fileUrls = [
     './index.html',
@@ -27,18 +23,16 @@ function preloadFiles() {
   }
 
   fileUrls.forEach(function (url) {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', url, true);
-
-    xhr.onload = function () {
-      if (xhr.status === 200) {
+    fetch(url)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Failed to load: ' + url);
+        }
         fileLoaded();
-      } else {
-        console.error('Failed to load: ' + url);
-      }
-    };
-
-    xhr.send();
+      })
+      .catch(error => {
+        console.error(error.message);
+      });
   });
 }
 
