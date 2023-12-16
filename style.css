@@ -28,7 +28,7 @@ body {
     user-select: none;
 }
 
-body::before {
+body::after {
     content: "";
     position: fixed;
     top: 0;
