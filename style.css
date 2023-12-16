@@ -30,8 +30,6 @@ body {
   padding: 0;
   min-height: 100vh;
   font-family: var(--font1);
-  animation: 1s ease-out var(--delay) 1 transitionAnimation;
-  animation-fill-mode: forwards;
   position: relative;
   opacity: 1; /* Change the opacity to 1 to make the body content visible */
   overflow: auto;
@@ -41,6 +39,11 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+main {
+  animation: 1s ease-out var(--delay) 1 transitionAnimation;
+  animation-fill-mode: forwards;
 }
 
 #profilePicture,
