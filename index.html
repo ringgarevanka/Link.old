@@ -14,10 +14,22 @@
       <link rel="stylesheet" href="./style.css">
    </head>
    <body>
-      <noscript>
-            <span style=" style="border: 1px solid red; padding: 10px; color:red">JavaScript is not enabled!</span>
-            <META HTTP-EQUIV="Refresh" CONTENT="60;URL=">
-      </noscript>
+
+<noscript>
+  <style>
+    body {
+      background-image: none;
+    }
+    .error {
+      border: 1px solid red;
+      padding: 10px;
+      color: red;
+    }
+  </style>
+  <span class="error">JavaScript is not enabled!</span>
+  <META HTTP-EQUIV="Refresh" CONTENT="60;URL=">
+</noscript>
+
       <div class="main" id="main"></div>
       <script async src="./script.js"></script> 
       <script async type="module" defer src="./app.js"></script>
