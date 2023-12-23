@@ -3,7 +3,7 @@ export const main = [{
    name: "Ringga Revanka",
    username: "@ringgarevanka",
    description: "Code • Game • Edit",
-   bottom_text: "© 2023 Ringga Revanka. All rights reserved.<br/><a href="https://github.com/ringgarevanka/Link">Source Code</a>",
+   bottom_text: "© 2023 Ringga Revanka. All rights reserved.",
 }, ];
 
 export const links = [
@@ -11,18 +11,6 @@ export const links = [
       name: "Instagram",
       link: "https://www.instagram.com/ringgarevanka/",
       icon: "fa-brands fa-instagram",
-      target: "_blank",
-   },
-   {
-      name: "TikTok",
-      link: "https://www.tiktok.com/@ringga_revanka/",
-      icon: "fa-brands fa-tiktok",
-      target: "_blank",
-   },
-   {
-      name: "TikTok (private account)",
-      link: "https://www.tiktok.com/@ringgarevanka/",
-      icon: "fa-brands fa-tiktok",
       target: "_blank",
    },
    {
@@ -44,6 +32,18 @@ export const links = [
       target: "_blank",
    },
    {
+      name: "TikTok",
+      link: "https://www.tiktok.com/@ringga_revanka/",
+      icon: "fa-brands fa-tiktok",
+      target: "_blank",
+   },
+   {
+      name: "TikTok (private account)",
+      link: "https://www.tiktok.com/@ringgarevanka/",
+      icon: "fa-brands fa-tiktok",
+      target: "_blank",
+   },
+   {
       name: "Telegram",
       link: "https://t.me/ringgarevanka",
       icon: "fa-brands fa-telegram",
@@ -60,5 +60,11 @@ export const links = [
       link: "https://ringgarevanka.github.io/LMP",
       icon: "fa-solid fa-project-diagram",
       target: "_self",
+   },
+   {
+      name: "[Projects] Link Page [This Page Source Code]",
+      link: "https://github.com/ringgarevanka/Link",
+      icon: "fa-solid fa-project-diagram",
+      target: "_blank",
    },
 ];
