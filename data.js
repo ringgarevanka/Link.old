@@ -3,7 +3,7 @@ export const main = [{
    name: "Ringga Revanka",
    username: "@ringgarevanka",
    description: "Code • Game • Edit",
-   bottom_text: "! This page is under development !",
+   bottom_text: "© 2023 Ringga Revanka. All rights reserved.<br/><a href="https://github.com/ringgarevanka/Link">Source Code</a>",
 }, ];
 
 export const links = [
@@ -15,13 +15,13 @@ export const links = [
    },
    {
       name: "TikTok",
-      link: "https://www.tiktok.com/@ringgarevanka/",
+      link: "https://www.tiktok.com/@ringga_revanka/",
       icon: "fa-brands fa-tiktok",
       target: "_blank",
    },
    {
-      name: "TikTok (2)",
-      link: "https://www.tiktok.com/@ringga_revanka/",
+      name: "TikTok (private account)",
+      link: "https://www.tiktok.com/@ringgarevanka/",
       icon: "fa-brands fa-tiktok",
       target: "_blank",
    },
