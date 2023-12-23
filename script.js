@@ -15,7 +15,7 @@ preload("/app.js");
 preload("/data.js");
 preload("/style.css");
 preload("https://avatars.githubusercontent.com/u/99320495");
-preload("https://cdn.discordapp.com/attachments/1182294906421645464/1182295005298184232/compresed.png");
+preload("https://cdn.discordapp.com/attachments/1182294906421645464/1187977108606177310/bg_compresed.png");
 preload("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
 preload("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 /*
