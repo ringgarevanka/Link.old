@@ -21,18 +21,19 @@ body {
   position: relative;
   background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);
   background-image: var(--bg);
-  opacity: 0;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  opacity: 0;
   position: relative;
   overflow: auto;
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
+  user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
 }
 
 #profilePicture,
