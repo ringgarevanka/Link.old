@@ -2,7 +2,7 @@ export const main = [{
    profilepicture: "https://cdn.discordapp.com/avatars/1007123238985412608/a_98a5677a253f92bb94481089c846e36e?size=1024",
    name: "Ringga Revanka",
    username: "@ringgarevanka",
-   description: "Code • Game • Edit",
+   description: "Content Creator, Maybe",
    bottom_text: "© 2022-2024 Ringga Revanka. All rights reserved.",
 }, ];
 
@@ -38,7 +38,7 @@ export const links = [
       target: "_blank",
    },
    {
-      name: "TikTok (private account)",
+      name: "TikTok 2nd",
       link: "https://www.tiktok.com/@ringgarevanka/",
       icon: "fa-brands fa-tiktok",
       target: "_blank",
@@ -53,18 +53,6 @@ export const links = [
       name: "E-Mail",
       link: "mailto:ringgarevanka@proton.me",
       icon: "fa-solid fa-envelope",
-      target: "_blank",
-   },
-   {
-      name: "[Projects] Local Media Player",
-      link: "https://ringgarevanka.github.io/LMP",
-      icon: "fa-solid fa-project-diagram",
-      target: "_self",
-   },
-   {
-      name: "[Projects] Link Page [This Page Source Code]",
-      link: "https://github.com/ringgarevanka/Link",
-      icon: "fa-solid fa-project-diagram",
       target: "_blank",
    },
 ];
