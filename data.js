@@ -1,5 +1,5 @@
 export const main = [{
-   profilepicture: "https://cdn.discordapp.com/avatars/1007123238985412608/a_98a5677a253f92bb94481089c846e36e?size=1024",
+   profilepicture: "https://avatars.githubusercontent.com/u/99320495",
    name: "Ringga Revanka",
    username: "@ringgarevanka",
    description: "Content Creator, Maybe",
