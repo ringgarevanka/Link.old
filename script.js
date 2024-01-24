@@ -4,7 +4,6 @@ function preload(src) {
   xhr.open("GET", src);
   xhr.responseType = "arraybuffer";
   xhr.onload = () => {
-    // Store resources in cache
     const cache = window.localStorage;
     cache.setItem(src, xhr.response);
   };
