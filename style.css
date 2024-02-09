@@ -84,32 +84,23 @@ body {
   margin: 27px auto;
 }
 
-.link {
+a.link {
   position: relative;
-  background-color: transparent;
-  color: var(--accentColor);
-  border: solid var(--accentColor) 2px;
+  color: var(--primary-color);
+  border: solid var(--primary-color) 2px;
   border-radius: 8px;
   font-family: var(--font2);
   font-size: 14px;
   text-align: center;
-  display: block;
   margin: 10px;
   padding: 12px;
-  text-decoration: none;
   transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
 }
 
-@media (hover: hover) {
-  .link:hover {
-    background-color: var(--accentColor);
-    color: var(--bgColor);
-  }
-}
-
-.link:active {
-  background-color: var(--accentColor);
-  color: var(--bgColor);
+a.link:hover,
+a.link:active {
+  background-color: var(--primary-color);
+  color: var(--background-color);
   filter: brightness(150%);
 }
 
