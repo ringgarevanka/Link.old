@@ -84,7 +84,7 @@ body {
   margin: 27px auto;
 }
 
-a.link {
+.link {
   position: relative;
   color: var(--primary-color);
   border: solid var(--primary-color) 2px;
@@ -97,8 +97,8 @@ a.link {
   transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
 }
 
-a.link:hover,
-a.link:active {
+.link:hover,
+.link:active {
   background-color: var(--primary-color);
   color: var(--background-color);
   filter: brightness(150%);
