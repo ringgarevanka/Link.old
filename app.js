@@ -4,9 +4,6 @@ import {
 from "./data.js";
 const mainContainer = document.getElementById("main");
 
-
-const currentyear = new Date().getFullYear();
-
 function addmain(profilepicture, name, username, description) {
 	return ` 
  <a id="profilePicture">
@@ -48,3 +45,5 @@ links.forEach((ele => {
 		target = ele.target;
 	allLinks += addLink(name, link, icon, target)
 })), linkContainer.innerHTML = allLinks;
+
+const currentyear = new Date().getFullYear();
