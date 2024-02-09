@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 
 :root {
-	--bgColor: #223344;
-	--bgColor2: #090a0f;
-	--accentColor: #FFF;
-	--font1: 'Montserrat', sans-serif;
-	--font2: 'Poppins', sans-serif;
-	--delay: .3s;
-	/* --bg: url('yourimageurl') */
+  --bgColor: #223344;
+  --bgColor2: #090a0f;
+  --accentColor: #fff;
+  --font1: "Montserrat", sans-serif;
+  --font2: "Poppins", sans-serif;
+  --delay: 0.3s;
+  /* --bg: url('yourimageurl') */
 }
 
 body {
@@ -19,7 +19,11 @@ body {
   animation: 1s ease-out var(--delay) 1 transitionAnimation;
   animation-fill-mode: forwards;
   position: relative;
-  background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);
+  background: radial-gradient(
+    ellipse at bottom,
+    var(--bgColor) 0%,
+    var(--bgColor2) 100%
+  );
   /* background-image: var(--bg); */
   background-repeat: no-repeat;
   background-position: center;
@@ -37,108 +41,107 @@ body {
 
 #profilePicture,
 #profilePicture img {
-	position: relative;
-	width: 120px;
-	height: 120px;
-	margin: 20px auto 10px;
-	border-radius: 8px;
-	display: block;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 20px auto 10px;
+  border-radius: 8px;
+  display: block;
 }
 
 #name,
 #username,
 #description {
-	color: var(--accentColor);
-	display: block;
-	font-family: var(--font1);
-	width: 100%;
-	text-align: center;
-	text-decoration: none;
+  color: var(--accentColor);
+  display: block;
+  font-family: var(--font1);
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
 }
 
 #name {
-	font-size: 18px;
-	font-weight: bold;
-	line-height: 1.5;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
 }
 
 #username {
-	font-size: 14px;
-	line-height: 1.0;
+  font-size: 14px;
+  line-height: 1;
 }
 
 #description {
-	font-size: 12px;
-	font-weight: lighter;
-	line-height: 2.0;
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: 2;
 }
 
 #links {
-	max-width: 675px;
-	width: auto;
-	display: block;
-	margin: 27px auto;
+  max-width: 675px;
+  width: auto;
+  display: block;
+  margin: 27px auto;
 }
 
 .link {
-	position: relative;
-	background-color: transparent;
-	color: var(--accentColor);
-	border: solid var(--accentColor) 2px;
-	border-radius: 8px;
-	font-family: var(--font2);
-	font-size: 14px;
-	text-align: center;
-	display: block;
-	margin: 10px;
-	padding: 12px;
-	text-decoration: none;
-	transition: all .25s cubic-bezier(.08, .59, .29, .99);
+  position: relative;
+  background-color: transparent;
+  color: var(--accentColor);
+  border: solid var(--accentColor) 2px;
+  border-radius: 8px;
+  font-family: var(--font2);
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  margin: 10px;
+  padding: 12px;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
 }
 
 @media (hover: hover) {
-	.link:hover {
-		background-color: var(--accentColor);
-		color: var(--bgColor);
-	}
+  .link:hover {
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+  }
 }
 
 .link:active {
-	background-color: var(--accentColor);
-	color: var(--bgColor);
-	filter: brightness(150%);
+  background-color: var(--accentColor);
+  color: var(--bgColor);
+  filter: brightness(150%);
 }
 
 #bottom_text {
-	position: relative;
-	padding-bottom: 20px;
-	color: var(--accentColor);
-	font-size: 10px;
-	display: block;
-	font-family: var(--font1);
-	width: 100%;
-	text-align: center;
+  position: relative;
+  padding-bottom: 20px;
+  color: var(--accentColor);
+  font-size: 10px;
+  display: block;
+  font-family: var(--font1);
+  width: 100%;
+  text-align: center;
 }
 
-
 @keyframes transitionAnimation {
-	0% {
-		opacity: 0;
-		transform: translateY(-10px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes animate {
-	0% {
-		background-position: -500%;
-	}
+  0% {
+    background-position: -500%;
+  }
 
-	100% {
-		background-position: 500%;
-	}
+  100% {
+    background-position: 500%;
+  }
 }
