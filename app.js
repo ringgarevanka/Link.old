@@ -1,57 +1,25 @@
-import {
-   main
-}
-from "./data.js";
+import { main, links } from "./data.js";
+
 const mainContainer = document.getElementById("main");
-
-function addmain(profilepicture, name, username, description, bottom_text) {
-   return ` 
- <a id="profilePicture"> 
- <img src="${profilepicture}"> 
- </a> 
- <div id="name"> 
- ${name} 
- </div> 
- <div id="username"> 
- ${username} 
- </div> 
- <div id="description">
- ${description}
- </div>
- <div class="links" id="links"></div> 
- <div id="bottom_text"> 
- ${bottom_text} 
- </div> 
- `
-}
-let allmain = "";
-main.forEach((ele => {
-   let profilepicture = ele.profilepicture,
-      name = ele.name,
-      username = ele.username,
-      description = ele.description,
-      bottom_text = ele.bottom_text;
-   allmain += addmain(profilepicture, name, username, description, bottom_text)
-})), mainContainer.innerHTML = allmain;
-
-import {
-   links
-}
-from "./data.js";
 const linkContainer = document.getElementById("links");
 
-function addLink(name, link, icon, target) {
-   return ` 
- <a class="link" href="${link}" target="${target}"> 
- <i class="${icon}"></i> ${name} 
- </a> 
- `
-}
-let allLinks = "";
-links.forEach((ele => {
-   let name = ele.name,
-      link = ele.link,
-      icon = ele.icon,
-      target = ele.target;
-   allLinks += addLink(name, link, icon, target)
-})), linkContainer.innerHTML = allLinks;
+const createProfile = (ele) => `
+  <a id="profilePicture"><img src="${ele.profilepicture}"></a>
+  <div id="name">${ele.name}</div>
+  <div id="username">${ele.username}</div>
+  <div id="description">${ele.description}</div>
+  <div class="links" id="links">${createLinks(ele.links)}</div>
+  <div id="bottom_text">${ele.bottom_text}</div>
+`;
+
+const createLinks = (links) => links.map(link => `
+  <a class="link" href="${link.link}" target="${link.target}">
+    <i class="${link.icon}"></i> ${link.name}
+  </a>
+`).join("");
+
+const allMain = main.map(createProfile).join("");
+mainContainer.innerHTML = allMain;
+
+const allLinks = createLinks(links);
+linkContainer.innerHTML = allLinks;
