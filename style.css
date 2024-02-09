@@ -86,21 +86,30 @@ body {
 
 .link {
   position: relative;
-  color: var(--primary-color);
-  border: solid var(--primary-color) 2px;
+  background-color: transparent;
+  color: var(--accentColor);
+  border: 2px solid var(--accentColor);
   border-radius: 8px;
   font-family: var(--font2);
   font-size: 14px;
   text-align: center;
+  display: inline-block; /* Use inline-block for a more compact layout */
   margin: 10px;
   padding: 12px;
+  text-decoration: none;
   transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
 }
 
-.link:hover,
+@media (hover: hover) {
+  .link:hover {
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+  }
+}
+
 .link:active {
-  background-color: var(--primary-color);
-  color: var(--background-color);
+  background-color: var(--accentColor);
+  color: var(--bgColor);
   filter: brightness(150%);
 }
 
