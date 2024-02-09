@@ -4,7 +4,10 @@ import {
 from "./data.js";
 const mainContainer = document.getElementById("main");
 
-function addmain(profilepicture, name, username, description, bottom_text) {
+
+const currentyear = new Date().getFullYear();
+
+function addmain(profilepicture, name, username, description) {
 	return ` 
  <a id="profilePicture">
    <img src="${profilepicture}">
@@ -12,8 +15,8 @@ function addmain(profilepicture, name, username, description, bottom_text) {
  <div id="name"> ${name} </div>
  <div id="username"> ${username} </div>
  <div id="description"> ${description} </div>
- <div class="links" id="links"></div>
- <div id="bottom_text"> ${bottom_text} </div>
+ <div id="links"></div>
+ <div id="bottom_text">©2022-${currentyear} ${name}. All rights reserved.</div>
  `
 }
 let allmain = "";
@@ -22,8 +25,7 @@ main.forEach((ele => {
 		name = ele.name,
 		username = ele.username,
 		description = ele.description,
-		bottom_text = ele.bottom_text;
-	allmain += addmain(profilepicture, name, username, description, bottom_text)
+	allmain += addmain(profilepicture, name, username, description)
 })), mainContainer.innerHTML = allmain;
 
 import {
