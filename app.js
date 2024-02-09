@@ -1,57 +1,44 @@
-import {
-   main
-}
-from "./data.js";
+import { main } from "./data.js";
+
 const mainContainer = document.getElementById("main");
 
-function addmain(profilepicture, name, username, description, bottom_text) {
-   return ` 
- <a id="profilePicture"> 
- <img src="${profilepicture}"> 
- </a> 
- <div id="name"> 
- ${name} 
- </div> 
- <div id="username"> 
- ${username} 
- </div> 
- <div id="description">
- ${description}
- </div>
- <div class="links" id="links"></div> 
- <div id="bottom_text"> 
- ${bottom_text} 
- </div> 
- `
+function createProfileElement(profile) {
+  const element = document.createElement("div");
+  element.innerHTML = `
+    <a id="profilePicture">
+      <img src="${profilepicture}" alt="${name}">
+    </a>
+    <div id="name">${name}</div>
+    <div id="username">${username}</div>
+    <div id="description">${description}</div>
+    <div class="links" id="links"></div>
+    <div id="bottom_text">${bottom_text}</div>
+  `;
+  return element;
 }
-let allmain = "";
-main.forEach((ele => {
-   let profilepicture = ele.profilepicture,
-      name = ele.name,
-      username = ele.username,
-      description = ele.description,
-      bottom_text = ele.bottom_text;
-   allmain += addmain(profilepicture, name, username, description, bottom_text)
-})), mainContainer.innerHTML = allmain;
 
-import {
-   links
-}
-from "./data.js";
+const profileElements = main.map(createProfileElement);
+mainContainer.append(...profileElements);
+
+import { links } from "./data.js";
 const linkContainer = document.getElementById("links");
 
-function addLink(name, link, icon, target) {
-   return ` 
- <a class="link" href="${link}" target="${target}"> 
- <i class="${icon}"></i> ${name} 
- </a> 
- `
+function createLink(name, link, icon, target) {
+  const linkElement = document.createElement("a");
+  linkElement.href = link;
+  linkElement.target = target;
+  linkElement.classList.add("link");
+
+  const iconElement = document.createElement("i");
+  iconElement.classList.add(icon);
+  linkElement.appendChild(iconElement);
+
+  linkElement.textContent = name;
+
+  return linkElement;
 }
-let allLinks = "";
-links.forEach((ele => {
-   let name = ele.name,
-      link = ele.link,
-      icon = ele.icon,
-      target = ele.target;
-   allLinks += addLink(name, link, icon, target)
-})), linkContainer.innerHTML = allLinks;
+
+for (const ele of links) {
+  const linkElement = createLink(ele.name, ele.link, ele.icon, ele.target);
+  linkContainer.appendChild(linkElement);
+}
