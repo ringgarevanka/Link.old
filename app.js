@@ -1,3 +1,5 @@
+const currentyear = new Date().getFullYear();
+
 import {
 	main
 }
@@ -45,5 +47,3 @@ links.forEach((ele => {
 		target = ele.target;
 	allLinks += addLink(name, link, icon, target)
 })), linkContainer.innerHTML = allLinks;
-
-const currentyear = new Date().getFullYear();
