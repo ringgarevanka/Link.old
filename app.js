@@ -6,22 +6,14 @@ const mainContainer = document.getElementById("main");
 
 function addmain(profilepicture, name, username, description, bottom_text) {
 	return ` 
- <a id="profilePicture"> 
- <img src="${profilepicture}"> 
- </a> 
- <div id="name"> 
- ${name} 
- </div> 
- <div id="username"> 
- ${username} 
- </div> 
- <div id="description">
- ${description}
- </div>
- <div class="links" id="links"></div> 
- <div id="bottom_text"> 
- ${bottom_text} 
- </div> 
+ <a id="profilePicture">
+   <img src="${profilepicture}">
+ </a>
+ <div id="name"> ${name} </div>
+ <div id="username"> ${username} </div>
+ <div id="description"> ${description} </div>
+ <div class="links" id="links"></div>
+ <div id="bottom_text"> ${bottom_text} </div>
  `
 }
 let allmain = "";
@@ -42,9 +34,8 @@ const linkContainer = document.getElementById("links");
 
 function addLink(name, link, icon, target) {
 	return ` 
- <a class="link" href="${link}" target="${target}"> 
- <i class="${icon}"></i> ${name} 
- </a> 
+ <a class="link" href="${link}" target="${target}">
+   <i class="${icon}"></i> ${name} </a>
  `
 }
 let allLinks = "";
