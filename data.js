@@ -20,6 +20,12 @@ export const links = [
       target: "_blank",
    },
    {
+      name: "YouTube",
+      link: "https://youtube.com/@ringgarevanka",
+      icon: "fa-brands fa-youtube",
+      target: "_blank",
+   },
+   {
       name: "Discord",
       link: "https://discordapp.com/users/1007123238985412608",
       icon: "fa-brands fa-discord",
