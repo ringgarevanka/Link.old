@@ -2,7 +2,7 @@ export const main = [{
    profilepicture: "https://avatars.githubusercontent.com/u/99320495",
    name: "Ringga Revanka",
    username: "@ringgarevanka",
-   description: "Content Creator, Maybe",
+   description: "Hello World.",
    bottom_text: "© 2022-2024 Ringga Revanka. All rights reserved.",
 }, ];
 
