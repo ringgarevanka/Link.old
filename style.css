@@ -2,13 +2,12 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 
 :root {
-  --bgColor: #1B040E /*#223344*/;
-  --bgColor2: #040404 /*#090a0f*/;
+  --bgColor: #1B040E;
+  --bgColor2: #040404;
   --accentColor: #fff;
   --font1: "Montserrat", sans-serif;
   --font2: "Poppins", sans-serif;
   --delay: 0.3s;
-  /* --bg: url('yourimageurl') */
 }
 
 body {
@@ -19,15 +18,7 @@ body {
   animation: 1s ease-out var(--delay) 1 transitionAnimation;
   animation-fill-mode: forwards;
   position: relative;
-  background: radial-gradient(
-    ellipse at bottom,
-    var(--bgColor) 0%,
-    var(--bgColor2) 100%
-  );
-  /* background-image: var(--bg); */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: radial-gradient(ellipse at bottom, var(--bgColor) 0%, var(--bgColor2) 100%);
   opacity: 0;
   position: relative;
   overflow: auto;
@@ -60,22 +51,9 @@ body {
   text-decoration: none;
 }
 
-#name {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.5;
-}
-
-#username {
-  font-size: 14px;
-  line-height: 1;
-}
-
-#description {
-  font-size: 12px;
-  font-weight: lighter;
-  line-height: 2;
-}
+#name { font-size: 18px; font-weight: bold; line-height: 1.5; }
+#username { font-size: 14px; line-height: 1; }
+#description { font-size: 12px; font-weight: lighter; line-height: 2; }
 
 #links {
   max-width: 675px;
@@ -101,17 +79,10 @@ body {
 }
 
 @media (hover: hover) {
-  .link:hover {
-    background-color: var(--accentColor);
-    color: var(--bgColor);
-  }
+  .link:hover { background-color: var(--accentColor); color: var(--bgColor); }
 }
 
-.link:active {
-  background-color: var(--accentColor);
-  color: var(--bgColor);
-  filter: brightness(150%);
-}
+.link:active { background-color: var(--accentColor); color: var(--bgColor); filter: brightness(150%); }
 
 #bottom_text {
   position: relative;
@@ -125,23 +96,11 @@ body {
 }
 
 @keyframes transitionAnimation {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes animate {
-  0% {
-    background-position: -500%;
-  }
-
-  100% {
-    background-position: 500%;
-  }
+  0% { background-position: -500%; }
+  100% { background-position: 500%; }
 }
