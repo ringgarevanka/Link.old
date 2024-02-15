@@ -3,7 +3,7 @@ export const main = [{
    name: "Ringga Revanka",
    username: "@ringgarevanka",
    description: "Hello World.",
-   bottom_text: "© 2022-2024 Ringga Revanka. All rights reserved.",
+   bottom_text: "© 2022-2024 Ringga Revanka. All rights reserved. <br> Under Development.",
 }, ];
 
 export const links = [
